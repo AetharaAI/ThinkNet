@@ -1,0 +1,53 @@
+emotionalmodel:
+  model_name: "distilgpt2"
+  temperature: 0.9
+  top_p: 0.95
+  repetition_penalty: 1.0
+  max_length: 150
+  bias_direction: "happy, empathetic"
+
+technicalmodel:
+  model_name: "EleutherAI/gpt-neo-1.3B"
+  temperature: 0.3
+  top_p: 0.8
+  repetition_penalty: 1.5
+  max_length: 100
+  bias_direction: "precise, factual"
+
+languagemodel:
+  model_name: "tiiuae/falcon-rw-1b"
+  temperature: 0.7
+  top_p: 0.9
+  repetition_penalty: 1.0
+  max_length: 200
+  bias_direction: "balanced, explanatory"
+
+logicmodel:
+  model_name: "EleutherAI/gpt-neo-125M"
+  temperature: 0.2
+  top_p: 0.7
+  repetition_penalty: 1.3
+  max_length: 120
+  bias_direction: "skeptical, analytical"
+
+creativemodel:
+  model_name: "sshleifer/tiny-gpt2"
+  temperature: 1.0
+  top_p: 0.98
+  repetition_penalty: 0.9
+  max_length: 200
+  bias_direction: "imaginative, playful"
+
+mood_controller:
+  build:
+    context: ./model_services
+    dockerfile: Dockerfile
+  container_name: mood_controller
+  ports:
+    - "8001:8001"
+  depends_on:
+    - emotional_model
+    - logic_model
+    - creative_model
+    - technical_model
+    - linguistic_model

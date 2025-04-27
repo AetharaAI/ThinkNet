@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+jinja2
+sqlalchemy
+databases
+httpx
+pyyaml
+loguru
+python-multipart
+scikit-learn
+sentence-transformers
+transformers
+torch  # <<< Add this also because you load models

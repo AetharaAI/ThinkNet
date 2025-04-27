@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Collective Hive Mind</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .card { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        input, button { padding: 10px; margin-top: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Ask the Brain Collective 🧠</h1>
+        <form action="/ask" method="post">
+            <input type="text" name="user_prompt" placeholder="Enter your question..." required>
+            <button type="submit">Ask</button>
+        </form>
+        {% if response %}
+            <h3><strong>Prompt:</strong> {{ prompt }}</h3>
+            <h3><strong>Response:</strong> {{ response }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

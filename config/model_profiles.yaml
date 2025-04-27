@@ -1,0 +1,10 @@
+language:
+  specialty: "Linguistic tasks like translation, summarization, generation"
+logic:
+  specialty: "Reasoning, mathematics, critical thinking"
+creativity:
+  specialty: "Storytelling, design, idea generation"
+technical:
+  specialty: "Software, hardware, science questions"
+emotional:
+  specialty: "Emotional tone, counseling, support"

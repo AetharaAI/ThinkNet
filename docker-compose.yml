@@ -1,0 +1,75 @@
+
+version: "3.8"
+
+services:
+  hive_mind:
+    build: .
+    container_name: hive_mind
+    ports:
+      - "8000:8000"
+    depends_on:
+      - language_model
+      - logic_model
+      - creative_model
+      - technical_model
+      - emotional_model
+
+  language_model:
+    image: python:3.10-slim
+    container_name: language_model
+    working_dir: /app/model_servers
+    volumes:
+      - ./model_servers:/app/model_servers
+    command: >
+      bash -c "pip install fastapi uvicorn transformers torch &&
+               uvicorn serve_language_model:app --host 0.0.0.0 --port 5001 --reload"
+    ports:
+      - "5001:5001"
+
+  logic_model:
+    image: python:3.10-slim
+    container_name: logic_model
+    working_dir: /app/model_servers
+    volumes:
+      - ./model_servers:/app/model_servers
+    command: >
+      bash -c "pip install fastapi uvicorn transformers torch &&
+               uvicorn serve_logic_model:app --host 0.0.0.0 --port 5002 --reload"
+    ports:
+      - "5002:5002"
+
+  creative_model:
+    image: python:3.10-slim
+    container_name: creative_model
+    working_dir: /app/model_servers
+    volumes:
+      - ./model_servers:/app/model_servers
+    command: >
+      bash -c "pip install fastapi uvicorn transformers torch &&
+               uvicorn serve_creative_model:app --host 0.0.0.0 --port 5003 --reload"
+    ports:
+      - "5003:5003"
+
+  technical_model:
+    image: python:3.10-slim
+    container_name: technical_model
+    working_dir: /app/model_servers
+    volumes:
+      - ./model_servers:/app/model_servers
+    command: >
+      bash -c "pip install fastapi uvicorn transformers torch &&
+               uvicorn serve_technical_model:app --host 0.0.0.0 --port 5004 --reload"
+    ports:
+      - "5004:5004"
+
+  emotional_model:
+    image: python:3.10-slim
+    container_name: emotional_model
+    working_dir: /app/model_servers
+    volumes:
+      - ./model_servers:/app/model_servers
+    command: >
+      bash -c "pip install fastapi uvicorn transformers torch &&
+               uvicorn serve_emotional_model:app --host 0.0.0.0 --port 5005 --reload"
+    ports:
+      - "5005:5005"

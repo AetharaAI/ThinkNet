@@ -1,0 +1,19 @@
+app_name: "Brain Collective Hive Mind"
+host: "0.0.0.0"
+port: 8000
+debug: true
+
+memory:
+  embedding_model: "all-MiniLM-L6-v2"
+
+models:
+  language:
+    url: "http://localhost:5001/generate"
+  logic:
+    url: "http://localhost:5002/generate"
+  creativity:
+    url: "http://localhost:5003/generate"
+  technical:
+    url: "http://localhost:5004/generate"
+  emotional:
+    url: "http://localhost:5005/generate"
