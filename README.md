@@ -3,6 +3,8 @@
 Brain Collective is a Python 3.10+ project that combines 6-8 specialized local LLMs into a unified cognitive system.
 It orchestrates distributed consensus, dynamic memory sharing, and a fully operational web API for interaction.
 
+See Also: License.txt
+
 ## 🛠️ Stack
 - **FastAPI** (Web API)
 - **SQLAlchemy** (Persistence)
