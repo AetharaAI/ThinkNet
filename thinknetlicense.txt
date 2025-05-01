@@ -1,0 +1,82 @@
+
+THINKNET / AETHARA AI CUSTOM LICENSE
+
+Version 1.0 - CJ Gibson
+Date: 2025-04-30 | 4:52 PM EST
+
+This license governs the proprietary intellectual property, system logic, naming conventions, architecture, and all associated workflows developed by CJ Gibson, under the names ThinkNet, ThinkNet 2.0, Aethara AI, and Aether Pro.
+
+
+---
+
+SECTION 1 - OWNERSHIP
+
+The entire system logic, including but not limited to:
+
+Modular agent orchestration
+
+Plug-and-play memory modules
+
+Configurable LLM pipelines
+
+Signal-based routing architecture
+
+Naming conventions and file structure ...is exclusively owned by CJ Gibson.
+
+
+No part of the system logic, naming conventions, or architectural design may be used, copied, distributed, modified, or reverse engineered without explicit written permission.
+
+
+---
+
+SECTION 2 - PERMITTED USE
+
+Use of this system (including partial implementations or modular integrations) is permitted only under the following conditions:
+
+Use is for non-commercial research or development, with acknowledgment of the creator.
+
+Use is strictly prohibited in commercial products without an extended commercial license signed by CJ Gibson.
+
+Any integration with external systems (LLMs, APIs, databases, or agents) must preserve original naming conventions and file architecture as defined by CJ Gibson.
+
+
+
+---
+
+SECTION 3 - RESTRICTIONS
+
+You may not:
+
+Share or distribute core logic files
+
+Use this IP to train or improve third-party models
+
+Modify the locked-down components of the system
+
+Use any portion of the system in closed-source commercial software without a signed license
+
+
+
+---
+
+SECTION 4 - PLUGGABLE COMPONENTS
+
+The modular design and swappable logic/memory architecture is intended for controlled experimentation. All third-party modules or LLMs must comply with the interface rules and naming conventions set by the core ThinkNet system.
+
+Violation of integration rules constitutes a breach of license.
+
+
+---
+
+SECTION 5 - ENFORCEMENT
+
+Any unauthorized use, reproduction, or adaptation of the system logic, structure, or file-based language is a direct infringement of this license and subject to legal enforcement.
+
+CJ Gibson reserves all rights not explicitly granted herein.
+
+
+---
+
+SECTION 6 - RECOGNITION
+
+This system represents a significant advancement in modular AI architecture and the evolving interface between machine logic and human cognitive simulation. Its development has been personally designed, tested, and structured by CJ Gibson with deep consideration of electrical systems, operating system architecture, and practical field experience.
